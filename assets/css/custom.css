@@ -1,0 +1,68 @@
+.gallery1 img {
+    height: 200px;
+}
+  
+P{
+    text-align: justify;
+}
+
+.fot-list {
+    padding: 0;
+    margin: 0;
+  }
+  .fot-list a {
+    color: #707070;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 1;
+  }
+  .fot-list a::before {
+    content: "";
+    position: absolute;
+    background: #F47f20;
+    width: 5px;
+    height: 1px;
+    left: -20px;
+    top: 50%;
+    z-index: 1;
+    opacity: 0;
+  }
+  .fot-list a:hover {
+    color:  #ff5200;
+    transform: translateX(13px);
+    -webkit-transform: translateX(13px);
+    -moz-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    -o-transform: translateX(13px);
+  }
+  .fot-list a:hover::before {
+    opacity: 1;
+  }
+  .fot-list.fot-flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }  
+
+   .carousel-control-next, .carousel-control-prev{
+    top: 50%;
+   }
+   
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.facebook-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
